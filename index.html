@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>File Encryptor / Decryptor</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>File Encryptor / Decryptor</h1>
+    
+    <label for="file-input">Choose file:</label>
+    <input type="file" id="file-input" />
+    
+    <label for="password">Enter Password:</label>
+    <input type="password" id="password" placeholder="Enter password" />
+    
+    <div class="buttons">
+      <button id="encrypt-btn">Encrypt File</button>
+      <button id="decrypt-btn">Decrypt File</button>
+    </div>
+    
+    <div id="message"></div>
+  </div>
+
+  <!-- CryptoJS Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
